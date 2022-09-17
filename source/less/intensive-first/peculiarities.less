@@ -1,0 +1,39 @@
+.peculiarities {
+    margin-top: 70px;
+
+    &__title {
+        .font__oks('Oks', 37px, 37px, 400);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 28px;
+        margin-top: 32px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 20% 75%;
+        column-gap: 5%;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    &__image {
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    &__list-title {
+        .font(18px, 21px, 600);
+    }
+
+    &__list-subtitle {
+        .font(13px, 20px, 400);
+    }
+}

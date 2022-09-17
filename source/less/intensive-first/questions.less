@@ -1,0 +1,61 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin-top: 70px;
+
+    &__title {
+        .font__oks('Oks', 42px, 42px, 400);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    &__question {
+        display: grid;
+        grid-template-columns: 1fr 28px;
+        grid-column-gap: 16px;
+        cursor: pointer;
+    }
+
+    &__name {
+        .font(18px, 21px, 600);
+    }
+
+    &__button {
+        cursor: pointer;
+    }
+
+    &__button-image {
+        transition-duration: 0.5s;
+
+        &--rotate {
+            transform: rotateX(180deg);
+            transition-duration: 0.5s;
+        }
+    }
+
+    &__answer {
+        display: none;
+        .font(13px, 20px, 400);
+
+        &--show {
+            display: block;
+            animation: appearance 1.5s;
+        }
+    }
+}
+
+@keyframes appearance {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

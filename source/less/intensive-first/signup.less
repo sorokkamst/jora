@@ -1,0 +1,121 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin-top: 70px;
+    overflow: hidden;
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__notification {
+        .font(10px, 12px, 600);
+        padding: 6px 20px;
+        border-radius: 12px;
+        background-color: @_c__orange;
+        align-self: flex-start;
+    }
+
+    &__title {
+        .font__oks('Oks', 37px, 37px, 400);
+    }
+
+    &__subtitle {
+        .font(18px, 21px, 600);
+    }
+
+    &__price {
+        .font(80px, 80px, 600);
+    }
+}
+
+.form {
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+        row-gap: 18px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid @_c__grey-dark;
+        border-radius: 14px;
+        overflow: hidden;
+    }
+
+    &__input {
+        .font(15px, 24px, 400);
+        color: @_c__dark-lighter;
+        padding: 12px 24px;
+        border: 0;
+    }
+
+    &__checkbox {
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        grid-column-gap: 12px;
+        min-height: 26px;
+
+        &-input {
+            appearance: none;
+            margin: 0;
+
+            &:checked + .form__checkbox-label:after {
+                content: '';
+                position: absolute;
+                width: 16px;
+                border-radius: 50%;
+                height: $width;
+                background-color: @_c__green-darker;
+                left: -32px;
+                top: 4px;
+            }
+        }
+
+        &-label {
+            display: block;
+            position: relative;
+            .font(9px, 10px, 400);
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: -36px;
+                width: 24px;
+                height: $width;
+                border: 1px solid @_c__grey-dark;
+                border-radius: 50%;
+                box-sizing: border-box;
+            }
+        }
+
+        &-link {
+            color: @_c__dark-lighter;
+            text-decoration: underline;
+        }
+    }
+
+    &__submit {
+        height: 48px;
+        background-color: @_c__grey;
+        border-radius: 14px;
+        color: inherit;
+        cursor: pointer;
+    }
+}

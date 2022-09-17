@@ -1,0 +1,83 @@
+.footer {
+    margin-top: 70px;
+    background-color: @_c__grey-lighter;
+    padding: 24px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 16px;
+    }
+
+    &-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 128px;
+
+        &__logo {
+            height: 20px;
+        }
+
+        &__contacts-wrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+        }
+
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+
+        &__contacts-tel {
+            .font(15px, 18px, 600);
+            color: @_c__dark-lighter;
+        }
+
+        &__contacts-email {
+            .font(12px, 14px, 600);
+            color: @_c__dark-lighter;
+        }
+
+        &__social {
+            display: flex;
+            column-gap: 8px;
+
+            &-image {
+                vertical-align: top;
+            }
+        }
+    }
+
+    &-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-self: flex-end;
+        row-gap: 32px;
+        column-gap: 40px;
+
+        &__nav {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            margin-left: auto;
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+            }
+
+            &-header {
+                .font(14px, 17px, 600);
+            }
+
+            &-item {
+                .font(12px, 14px, 400);
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.start {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__info-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    &__date {
+        .font(12px, 12px, 600);
+        align-self: flex-start;
+        padding: 6px 20px;
+        background-color: @_c__orange;
+        border-radius: 12px;
+    }
+
+    &__title {
+        .font__oks('Oks', 86px, 86px, 400);
+    }
+
+    &__subtitle {
+        .font(18px, 21px, 600);
+    }
+
+    &__description {
+        .font(13px, 20px, 400);
+    }
+
+    &__entry-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        background-color: @_c__grey;
+        border-radius: 14px;
+        cursor: pointer;
+    }
+}

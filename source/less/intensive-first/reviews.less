@@ -1,0 +1,53 @@
+.reviews {
+    margin-top: 70px;
+
+    &__title {
+        .font__oks('Oks', 42px, 42px, 400);
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 16px;
+        margin-top: 32px;
+        overflow: hidden;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        width: 200px;
+        height: 392px;
+    }
+
+    &__video {
+        height: 100%;
+        border-radius: 20px;
+        background-color: @_c__grey-lighter;
+    }
+
+    &__data {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__name {
+        position: relative;
+        .font(14px, 20px, 500);
+        padding-left: 28px;
+        color: @_c__purple;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            content: '';
+            width: 20px;
+            height: $width;
+            background-image: url('../images/person.svg');
+        }
+    }
+
+    &__duration {
+        .font(14px, 20px, 400);
+    }
+}
