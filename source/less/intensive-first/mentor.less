@@ -4,10 +4,17 @@
     row-gap: 32px;
     margin-top: 70px;
 
+    @media (min-width: @tablet) {
+        flex-direction: row;
+        column-gap: 16px;
+    }
+
     &__description {
         display: flex;
         flex-direction: column;
         row-gap: 20px;
+        width: 100%;
+        align-self: center;
     }
 
     &__title {
@@ -16,5 +23,9 @@
 
     &__subtitle {
         .font(13px, 20px, 400);
+    }
+
+    &__image {
+        width: 100%;
     }
 }

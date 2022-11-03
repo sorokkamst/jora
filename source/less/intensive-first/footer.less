@@ -1,5 +1,5 @@
 .footer {
-    margin-top: 70px;
+    margin-top: 60px;
     background-color: @_c__grey-lighter;
     padding: 24px;
 
@@ -46,24 +46,51 @@
             column-gap: 8px;
 
             &-image {
+                width: 24px;
+                height: $width;
                 vertical-align: top;
+                transition: fill 0.3s;
+
+                &--vk:hover,
+                &--vk:active {
+                    fill: @_c__vk;
+                }
+
+                &--dzen:hover,
+                &--dzen:active {
+                    fill: @_c__dzen;
+                }
+
+                &--tg:hover,
+                &--tg:active {
+                    fill: @_c__tg;
+                }
+
+                &--whatsapp:hover,
+                &--whatsapp:active {
+                    fill: @_c__whatsapp;
+                }
             }
         }
     }
 
     &-right {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-self: flex-end;
+        flex-direction: column;
         row-gap: 32px;
         column-gap: 40px;
+        margin-left: auto;
+
+        @media (min-width: @tablet) {
+            flex-direction: row;
+            max-width: initial;
+        }
 
         &__nav {
             display: flex;
             flex-direction: column;
             row-gap: 16px;
-            margin-left: auto;
+            max-width: 230px;
 
             &-list {
                 display: flex;

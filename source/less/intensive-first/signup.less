@@ -1,9 +1,16 @@
 .signup {
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 32px;
     margin-top: 70px;
     overflow: hidden;
+
+    @media (min-width: @tablet) {
+        grid-template-rows: none;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: initial;
+        grid-column-gap: 16px;
+    }
 
     &__description {
         display: flex;
@@ -31,6 +38,10 @@
 
     &__subtitle {
         .font(18px, 21px, 600);
+
+        @media (min-width: @tablet) {
+            min-height: 63px;
+        }
     }
 
     &__price {
@@ -39,6 +50,11 @@
 }
 
 .form {
+    @media (min-width: @tablet) {
+        align-self: end;
+        margin-bottom: 9px;
+    }
+
     &__fieldset {
         display: flex;
         flex-direction: column;
@@ -62,7 +78,7 @@
     &__input {
         .font(15px, 24px, 400);
         color: @_c__dark-lighter;
-        padding: 12px 24px;
+        padding: 11px 24px;
         border: 0;
     }
 
@@ -112,10 +128,18 @@
     }
 
     &__submit {
+        .font(15px, 24px, 400);
         height: 48px;
-        background-color: @_c__grey;
-        border-radius: 14px;
         color: inherit;
+        border-radius: 14px;
+        background-color: @_c__grey;
+        transition: background-color 0.3s;
         cursor: pointer;
+
+        &:hover,
+        &:active {
+            background-color: @_c__blue-light;
+            transition: background-color 0.3s;
+        }
     }
 }

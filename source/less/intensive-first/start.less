@@ -1,7 +1,16 @@
 .start {
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+
+    @media (min-width: @tablet) {
+        grid-template-areas:
+            "info-wrapper image"
+            "button button";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr min-content;
+        grid-column-gap: 16px;
+        grid-row-gap: 24px;
+    }
 
     &__info {
         display: flex;
@@ -13,10 +22,24 @@
         display: flex;
         flex-direction: column;
         row-gap: 8px;
+
+        @media (min-width: @tablet) {
+            grid-area: info-wrapper;
+        }
+    }
+
+    &__image {
+        margin-top: 32px;
+        width: 100%;
+
+        @media (min-width: @tablet) {
+            grid-area: image;
+            margin: auto 0;
+        }
     }
 
     &__date {
-        .font(12px, 12px, 600);
+        .font(10px, 12px, 600);
         align-self: flex-start;
         padding: 6px 20px;
         background-color: @_c__orange;
@@ -36,12 +59,26 @@
     }
 
     &__entry-link {
+        .font(15px, 24px, 400);
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 24px;
         height: 48px;
         background-color: @_c__grey;
         border-radius: 14px;
+        transition: background-color 0.3s;
         cursor: pointer;
+
+        &:hover,
+        &:active {
+            background-color: @_c__blue-light;
+            transition: background-color 0.3s;
+        }
+
+        @media (min-width: @tablet) {
+            grid-area: button;
+            margin-top: initial;
+        }
     }
 }
