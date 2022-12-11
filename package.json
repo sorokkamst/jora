@@ -5,6 +5,7 @@
   "author": "Ivan Lomov",
   "license": "DOC",
   "readme": "readme",
+  "private": true,
   "engines": {
     "node": ">=16.17 <17",
     "npm": ">=8.15 <9"
@@ -12,11 +13,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp",
-    "build": "gulp build"
+    "build": "webpack --mode=development"
   },
   "devDependencies": {
     "autoprefixer": "10.4.8",
     "browser-sync": "2.27.10",
+    "css-loader": "6.7.1",
     "del": "6.0.0",
     "gulp": "4.0.2",
     "gulp-htmlmin": "5.0.1",
@@ -26,7 +28,10 @@
     "gulp-rename": "2.0.0",
     "gulp-sourcemaps": "3.0.0",
     "less": "4.1.3",
-    "postcss-csso": "6.0.1"
+    "postcss-csso": "6.0.1",
+    "style-loader": "3.3.1",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0"
   },
   "dependencies": {
     "swiper": "8.4.2"
