@@ -1,8 +1,18 @@
 .peculiarities {
     margin-top: 70px;
 
+    @media @desktop {
+        margin-top: 120px;
+    }
+
     &__title {
         .font__oks('Oks', 37px, 37px, 400);
+
+        @media @desktop {
+            font-size: 42px;
+            line-height: 42px;
+            text-align: center;
+        }
     }
 
     &__list {
@@ -10,30 +20,66 @@
         flex-direction: column;
         row-gap: 28px;
         margin-top: 32px;
+
+        @media @desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 40px;
+            row-gap: 32px;
+            margin-top: 48px;
+        }
     }
 
     &__item {
         display: grid;
         grid-template-columns: 56px 1fr;
         column-gap: 16px;
+
+        @media @desktop {
+            column-gap: 25px;
+            width: 440px;
+        }
     }
 
     &__description {
         display: flex;
         flex-direction: column;
-        row-gap: 8px;
+        row-gap: 16px;
+
+        @media @tablet {
+            row-gap: 8px;
+        }
+
+        @media @desktop {
+            row-gap: 8px;
+        }
     }
 
     &__image {
         align-self: flex-start;
         width: 100%;
+
+        @media @desktop {
+            width: 60px;
+            height: $width;
+        }
     }
 
     &__list-title {
         .font(18px, 21px, 600);
+
+        @media @desktop {
+            font-size: 22px;
+            line-height: 26px;
+        }
     }
 
     &__list-subtitle {
         .font(13px, 20px, 400);
+
+        @media @desktop {
+            font-size: 15px;
+            line-height: 24px;
+        }
     }
 }

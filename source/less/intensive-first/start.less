@@ -1,8 +1,10 @@
 .start {
-    display: grid;
-    grid-template-rows: min-content 1fr;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
 
-    @media (min-width: @tablet) {
+    @media @tablet {
+        display: grid;
         grid-template-areas:
             "info-wrapper image"
             "button button";
@@ -12,29 +14,35 @@
         grid-row-gap: 24px;
     }
 
-    &__info {
-        display: flex;
-        flex-direction: column;
-        row-gap: 24px;
+    @media @desktop {
+        display: grid;
+        grid-template-areas:
+            "info-wrapper image"
+            "button image";
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+        grid-template-rows: initial;
+        grid-row-gap: initial;
     }
 
     &__info-wrapper {
         display: flex;
         flex-direction: column;
         row-gap: 8px;
-
-        @media (min-width: @tablet) {
-            grid-area: info-wrapper;
-        }
+        grid-area: info-wrapper;
     }
 
     &__image {
         margin-top: 32px;
         width: 100%;
+        grid-area: image;
 
-        @media (min-width: @tablet) {
-            grid-area: image;
+        @media @tablet {
             margin: auto 0;
+        }
+
+        @media @desktop {
+            margin-top: 0;
         }
     }
 
@@ -48,6 +56,11 @@
 
     &__title {
         .font__oks('Oks', 86px, 86px, 400);
+
+        @media @desktop {
+            font-size: 106px;
+            line-height: 106px;
+        }
     }
 
     &__subtitle {
@@ -56,6 +69,11 @@
 
     &__description {
         .font(13px, 20px, 400);
+
+        @media @desktop {
+            font-size: 15px;
+            line-height: 24px;
+        }
     }
 
     &__entry-link {
@@ -69,6 +87,7 @@
         border-radius: 14px;
         transition: background-color 0.3s;
         cursor: pointer;
+        grid-area: button;
 
         &:hover,
         &:active {
@@ -76,9 +95,12 @@
             transition: background-color 0.3s;
         }
 
-        @media (min-width: @tablet) {
-            grid-area: button;
+        @media @tablet {
             margin-top: initial;
+        }
+
+        @media @desktop {
+            margin-top: auto;
         }
     }
 }

@@ -1,21 +1,33 @@
 .signup {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr min-content;
     grid-row-gap: 32px;
     margin-top: 70px;
     overflow: hidden;
 
-    @media (min-width: @tablet) {
+    @media @tablet {
         grid-template-rows: none;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: initial;
         grid-column-gap: 16px;
     }
 
+    @media @desktop {
+        grid-template-rows: none;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: initial;
+        grid-column-gap: 40px;
+        margin-top: 120px;
+    }
+
     &__description {
         display: flex;
         flex-direction: column;
         row-gap: 24px;
+
+        @media @desktop {
+            row-gap: 20px;
+        }
     }
 
     &__top {
@@ -34,31 +46,54 @@
 
     &__title {
         .font__oks('Oks', 37px, 37px, 400);
+
+        @media @desktop {
+            font-size: 42px;
+            line-height: $font-size;
+        }
     }
 
     &__subtitle {
         .font(18px, 21px, 600);
 
-        @media (min-width: @tablet) {
+        @media @tablet {
             min-height: 63px;
+        }
+
+        @media @desktop {
+            font-size: 22px;
+            line-height: 26px;
         }
     }
 
     &__price {
         .font(80px, 80px, 600);
+
+        @media @desktop {
+            font-size: 105px;
+            line-height: $font-size;
+        }
     }
 }
 
 .form {
-    @media (min-width: @tablet) {
+    @media @tablet {
         align-self: end;
         margin-bottom: 9px;
+    }
+
+    @media @desktop {
+        align-self: end;
     }
 
     &__fieldset {
         display: flex;
         flex-direction: column;
         row-gap: 18px;
+
+        @media @desktop {
+            margin-bottom: 15px;
+        }
     }
 
     &__list {

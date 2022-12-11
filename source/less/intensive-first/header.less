@@ -3,7 +3,7 @@
     padding: 18px 16px 0;
     color: @_c__dark-lighter;
 
-    &__mobile-visible {
+    &__visible {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -12,6 +12,48 @@
     &__logo {
         align-self: flex-end;
         padding: 8px;
+        cursor: pointer;
+    }
+
+    &__nav {
+        @media @mobile {
+            display: none;
+        }
+
+        @media @tablet {
+            display: none;
+        }
+
+        display: flex;
+        column-gap: 32px;
+    }
+
+    &__links {
+        display: flex;
+        align-self: center;
+        column-gap: 20px;
+    }
+
+    &__social-links {
+        display: flex;
+        column-gap: 8px;
+    }
+
+    &__link {
+        .font(14px, 17px, 600);
+        cursor: pointer;
+    }
+
+    &__social-link {
+        width: 24px;
+        height: $width;
+        cursor: pointer;
+
+        & > img {
+            width: 100%;
+            height: $width;
+            margin: auto 0;
+        }
     }
 
     &__burger {
@@ -29,6 +71,14 @@
             height: 20px;
             padding: 6px;
             cursor: pointer;
+
+            &.hide {
+                display: none;
+            }
+
+            @media @desktop {
+                display: none;
+            }
         }
     }
 
@@ -41,6 +91,10 @@
         top: 0;
         background-color: fade(@_c__dark, 10);
         z-index: 1000;
+
+        &.show {
+            display: block;
+        }
     }
 
     &-mob-menu {

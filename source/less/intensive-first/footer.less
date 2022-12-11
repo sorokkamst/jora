@@ -1,7 +1,7 @@
 .footer {
     margin-top: 60px;
     background-color: @_c__grey-lighter;
-    padding: 24px;
+    padding: 24px 0;
 
     &__wrapper {
         display: flex;
@@ -17,6 +17,7 @@
 
         &__logo {
             height: 20px;
+            cursor: pointer;
         }
 
         &__contacts-wrapper {
@@ -81,7 +82,12 @@
         column-gap: 40px;
         margin-left: auto;
 
-        @media (min-width: @tablet) {
+        @media @tablet {
+            flex-direction: row;
+            max-width: initial;
+        }
+
+        @media @desktop {
             flex-direction: row;
             max-width: initial;
         }
@@ -104,6 +110,7 @@
 
             &-item {
                 .font(12px, 14px, 400);
+                cursor: pointer;
             }
         }
     }

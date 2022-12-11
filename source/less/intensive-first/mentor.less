@@ -4,9 +4,15 @@
     row-gap: 32px;
     margin-top: 70px;
 
-    @media (min-width: @tablet) {
+    @media @tablet {
         flex-direction: row;
         column-gap: 16px;
+    }
+
+    @media @desktop {
+        flex-direction: row;
+        column-gap: 40px;
+        margin-top: 120px;
     }
 
     &__description {
@@ -19,10 +25,20 @@
 
     &__title {
         .font__oks('Oks', 37px, 37px, 400);
+
+        @media @desktop {
+            font-size: 42px;
+            line-height: 42px;
+        }
     }
 
     &__subtitle {
         .font(13px, 20px, 400);
+
+        @media @desktop {
+            font-size: 15px;
+            line-height: 24px;
+        }
     }
 
     &__image {
