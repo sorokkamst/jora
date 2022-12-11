@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="../fonts/Oks.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/GilroyRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/GilroyMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/GilroySemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Диагностика 1 – 2 года</title>
+</head>
+<body class="body">
+<header class="header container">
+    <div class="header__container">
+        <div class="header__visible">
+            <img class="header__logo" src="images/speech-logo.svg" alt="Логотип Развитие речи">
+            <nav class="header__nav">
+                <ul class="header__links">
+                    <li class="header__link">Вход</li>
+                    <li class="header__link">Регистрация</li>
+                </ul>
+                <ul class="header__social-links">
+                    <li class="header__social-link">
+                        <img src="./images/social-vk.svg" alt="Вконтакте">
+                    </li>
+                    <li class="header__social-link">
+                        <img src="./images/social-dzen.svg" alt="Дзен">
+                    </li>
+                    <li class="header__social-link">
+                        <img src="./images/social-tg.svg" alt="Телеграмм">
+                    </li>
+                    <li class="header__social-link">
+                        <img src="./images/social-whatsapp.svg" alt="Вотсап">
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__burger-wrapper">
+                <button class="header__burger"></button>
+            </div>
+        </div>
+        <div class="header__mobile-hidden">
+            <nav class="header-mob-menu header-mob-menu--hidden header__burger-menu">
+                <ul class="header-mob-menu__login-list">
+                    <li class="header-mob-menu__login-item">
+                        <a href="#" class="header-mob-menu__login-link">Вход</a>
+                        <button class="header-mob-menu__close-menu" type="button"></button>
+                    </li>
+                    <li class="header-mob-menu__login-item">
+                        <a href="#" class="header-mob-menu__login-link">Регистрация</a>
+                    </li>
+                </ul>
+                <span class="header-mob-menu__separator"></span>
+                <ul class="header-mob-menu__nav-list">
+                    <li class="header-mob-menu__nav-item">
+                        <a href="#" class="header-mob-menu__nav-link">Подходит ли вам интенсив</a>
+                    </li>
+                    <li class="header-mob-menu__nav-item">
+                        <a href="#" class="header-mob-menu__nav-link">Как проходит интенсив</a>
+                    </li>
+                    <li class="header-mob-menu__nav-item">
+                        <a href="#" class="header-mob-menu__nav-link">Работа с наставником</a>
+                    </li>
+                    <li class="header-mob-menu__nav-item">
+                        <a href="#" class="header-mob-menu__nav-link">Особенности</a>
+                    </li>
+                    <li class="header-mob-menu__nav-item">
+                        <a href="#" class="header-mob-menu__nav-link">Программа</a>
+                    </li>
+                    <li class="header-mob-menu__nav-item">
+                        <a href="#" class="header-mob-menu__nav-link">Запись на интенсив</a>
+                    </li>
+                    <li class="header-mob-menu__nav-item">
+                        <a href="#" class="header-mob-menu__nav-link">Отзывы</a>
+                    </li>
+                    <li class="header-mob-menu__nav-item">
+                        <a href="#" class="header-mob-menu__nav-link">Ответы на вопросы</a>
+                    </li>
+                </ul>
+                <ul class="header-mob-menu__social">
+                    <li class="header-mob-menu__social-item">
+                        <svg class="header-mob-menu__social-link" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="10" fill="#A8D1EF"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M25.5411 10.8126C25.6801 10.3442 25.5411 10 24.8794 10H22.6914C22.135 10 21.8786 10.2973 21.7395 10.6252C21.7395 10.6252 20.6268 13.3652 19.0505 15.145C18.5406 15.6602 18.3087 15.8242 18.0306 15.8242C17.8915 15.8242 17.6902 15.6602 17.6902 15.1919V10.8126C17.6902 10.2505 17.5287 10 17.0651 10H13.6268C13.2791 10 13.07 10.2609 13.07 10.5081C13.07 11.0409 13.8581 11.1638 13.9393 12.6626V15.9179C13.9393 16.6316 13.8118 16.761 13.5336 16.761C12.7919 16.761 10.9876 14.0087 9.91744 10.8594C9.70773 10.2473 9.49738 10 8.93819 10H6.75018C6.12504 10 6 10.2973 6 10.6252C6 11.2107 6.74178 14.1146 9.45387 17.9553C11.2619 20.5782 13.8093 22 16.1274 22C17.5182 22 17.6902 21.6842 17.6902 21.1403V19.1579C17.6902 18.5263 17.822 18.4003 18.2624 18.4003C18.5869 18.4003 19.1433 18.5642 20.4414 19.8288C21.9249 21.3276 22.1695 22 23.004 22H25.192C25.8171 22 26.1297 21.6842 25.9494 21.061C25.752 20.4399 25.0437 19.5388 24.1039 18.4705C23.5939 17.8616 22.8289 17.2059 22.5971 16.878C22.2726 16.4565 22.3653 16.2691 22.5971 15.8945C22.5971 15.8945 25.2629 12.1006 25.5411 10.8126V10.8126Z"
+                                  fill="white"/>
+                        </svg>
+                    </li>
+                    <li class="header-mob-menu__social-item">
+                        <svg class="header-mob-menu__social-link" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="10" fill="#BFA8EF"/>
+                            <path
+                                d="M26 16.1071V15.8929C21.5714 15.75 19.55 15.6429 17.9286 14.0714C16.3571 12.45 16.2429 10.4286 16.1071 6H15.8929C15.75 10.4286 15.6429 12.45 14.0714 14.0714C12.45 15.6429 10.4286 15.7571 6 15.8929V16.1071C10.4286 16.25 12.45 16.3571 14.0714 17.9286C15.6429 19.55 15.7571 21.5714 15.8929 26H16.1071C16.25 21.5714 16.3571 19.55 17.9286 17.9286C19.55 16.3571 21.5714 16.2429 26 16.1071"
+                                fill="white"/>
+                        </svg>
+                    </li>
+                    <li class="header-mob-menu__social-item">
+                        <svg class="header-mob-menu__social-link" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="10" fill="#A4CFDC"/>
+                            <path
+                                d="M11.267 17.5327L7.65363 16.3799C7.65363 16.3799 7.22179 16.2083 7.36084 15.8193C7.38946 15.7391 7.44721 15.6709 7.61995 15.5536C8.42058 15.0071 22.4391 10.0735 22.4391 10.0735C22.4391 10.0735 22.8349 9.94295 23.0683 10.0298C23.1261 10.0473 23.1781 10.0795 23.2189 10.1231C23.2598 10.1668 23.2881 10.2202 23.3009 10.2781C23.3262 10.3802 23.3367 10.4854 23.3323 10.5904C23.3312 10.6812 23.3199 10.7654 23.3114 10.8975C23.226 12.2463 20.671 22.3133 20.671 22.3133C20.671 22.3133 20.5181 22.9024 19.9704 22.9226C19.8358 22.9268 19.7017 22.9045 19.5761 22.8569C19.4505 22.8094 19.336 22.7375 19.2394 22.6457C18.1646 21.7404 14.4497 19.2959 13.6289 18.7583C13.6103 18.746 13.5948 18.7299 13.5831 18.7111C13.5715 18.6924 13.5641 18.6714 13.5615 18.6496C13.55 18.5929 13.6129 18.5227 13.6129 18.5227C13.6129 18.5227 20.0815 12.8929 20.2536 12.3019C20.2669 12.2561 20.2166 12.2335 20.149 12.2536C19.7193 12.4083 12.2716 17.0136 11.4497 17.5218C11.3905 17.5393 11.328 17.5431 11.267 17.5327V17.5327Z"
+                                fill="white"/>
+                        </svg>
+                    </li>
+                    <li class="header-mob-menu__social-item">
+                        <svg class="header-mob-menu__social-link" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="10" fill="#BECCBD"/>
+                            <path
+                                d="M8.00321 24L9.08481 20.0256C8.37212 18.8039 7.99769 17.4144 8.00001 16C8.00001 11.5816 11.5816 8 16 8C20.4184 8 24 11.5816 24 16C24 20.4184 20.4184 24 16 24C14.5862 24.0023 13.1973 23.6281 11.976 22.916L8.00321 24ZM13.1128 12.2464C13.0095 12.2528 12.9085 12.28 12.816 12.3264C12.7292 12.3755 12.65 12.437 12.5808 12.5088C12.4848 12.5992 12.4304 12.6776 12.372 12.7536C12.0763 13.1384 11.9173 13.6107 11.92 14.096C11.9216 14.488 12.024 14.8696 12.184 15.2264C12.5112 15.948 13.0496 16.712 13.7608 17.42C13.932 17.5904 14.0992 17.7616 14.2792 17.9208C15.1619 18.698 16.2138 19.2584 17.3512 19.5576L17.8064 19.6272C17.9544 19.6352 18.1024 19.624 18.2512 19.6168C18.4842 19.6048 18.7117 19.5417 18.9176 19.432C19.0224 19.378 19.1246 19.3193 19.224 19.256C19.224 19.256 19.2584 19.2336 19.324 19.184C19.432 19.104 19.4984 19.0472 19.588 18.9536C19.6544 18.8848 19.712 18.804 19.756 18.712C19.8184 18.5816 19.8808 18.3328 19.9064 18.1256C19.9256 17.9672 19.92 17.8808 19.9176 17.8272C19.9144 17.7416 19.8432 17.6528 19.7656 17.6152L19.3 17.4064C19.3 17.4064 18.604 17.1032 18.1792 16.9096C18.1344 16.8901 18.0864 16.879 18.0376 16.8768C17.9829 16.8712 17.9276 16.8773 17.8754 16.8949C17.8232 16.9124 17.7754 16.9409 17.7352 16.9784V16.9768C17.7312 16.9768 17.6776 17.0224 17.0992 17.7232C17.066 17.7678 17.0203 17.8015 16.9678 17.82C16.9154 17.8386 16.8587 17.8411 16.8048 17.8272C16.7527 17.8133 16.7016 17.7956 16.652 17.7744C16.5528 17.7328 16.5184 17.7168 16.4504 17.6872L16.4464 17.6856C15.9887 17.4858 15.565 17.2159 15.1904 16.8856C15.0896 16.7976 14.996 16.7016 14.9 16.6088C14.5853 16.3074 14.311 15.9664 14.084 15.5944L14.0368 15.5184C14.0029 15.4673 13.9755 15.4122 13.9552 15.3544C13.9248 15.2368 14.004 15.1424 14.004 15.1424C14.004 15.1424 14.1984 14.9296 14.2888 14.8144C14.3641 14.7187 14.4343 14.6191 14.4992 14.516C14.5936 14.364 14.6232 14.208 14.5736 14.0872C14.3496 13.54 14.1176 12.9952 13.8792 12.4544C13.832 12.3472 13.692 12.2704 13.5648 12.2552C13.5216 12.2504 13.4784 12.2456 13.4352 12.2424C13.3278 12.2371 13.2201 12.2389 13.1128 12.2464Z"
+                                fill="white"/>
+                        </svg>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="explanation container">
+        <h1 class="explanation__title">Диагностика</h1>
+        <div class="explanation__content">
+            <p class="explanation__point">
+                Возрастные навыки у&nbsp;всех здоровых детей формируются в&nbsp;строго
+                определённой последовательности и&nbsp;в&nbsp;определенные временные промежутки. В&nbsp;таблице собраны
+                именно те&nbsp;навыки и&nbsp;умения, которые формируются у&nbsp;ребёнка в&nbsp;этом возрасте.
+            </p>
+            <p class="explanation__point">
+                На&nbsp;протяжении двух дней наблюдайте за&nbsp;ребёнком и&nbsp;результаты
+                заносите в&nbsp;таблицу. Если ребёнок не&nbsp;освоил навык, например, не&nbsp;пытается стоять несколько
+                секунд самостоятельно&nbsp;&mdash; ставьте отметку в&nbsp;ячейке &laquo;Нет&raquo;. Если вы&nbsp;видите,
+                что ребёнок иногда пользуется указательным жестом, то&nbsp;ставьте отметку в&nbsp;ячейке &laquo;Иногда&raquo;.
+                А&nbsp;если, например, малыш понимает и&nbsp;выполняет ваши просьбы &laquo;Дай...&raquo;, &laquo;Положи...&raquo;,
+                то&nbsp;это значит, что навык уже точно сформирован и&nbsp;можно поставить отметку в&nbsp;ячейке &laquo;Всегда&raquo;.
+            </p>
+            <p class="explanation__point">
+                Постепенно заполняя таблицу, вы&nbsp;сами проводите простейшую диагностику развития своего малыша, и&nbsp;видите,
+                какие умения и&nbsp;навыки ребёнок осваивает легко, какие недостаточно сформированы и&nbsp;над чем ещё
+                нужно поработать. Если что-то из&nbsp;этой таблицы малыш ещё не&nbsp;научился делать&nbsp;&mdash;
+                уделите этому больше внимания. Для развития этих навыков нужно подобрать игры и&nbsp;упражнения,
+                нацеленные именно на&nbsp;них.
+            </p>
+        </div>
+    </section>
+    <section class="questions container">
+        <div class="questions__general-motor-skills">
+            <div class="questions__legend">
+                <h3 class="questions__title">Общая моторика</h3>
+                <div class="questions__answers">
+                    <span class="questions__answer">Нет</span>
+                    <span class="questions__answer">Иногда</span>
+                    <span class="questions__answer">Всегда</span>
+                </div>
+            </div>
+            <table class="questions__table">
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Ходит боком вокруг мебели
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row ">
+                    <td class="questions__table-data questions__table-data--main">
+                        Стоит несколько секунд самостоятельно
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Делает попытки ходить самостоятельно
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Если положить интересующий ребёнка предмет рядом на пол, он пытается присесть и взять его
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Пытается взбираться по ступенькам на четвереньках
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="questions__eye-hand-system">
+            <div class="questions__legend">
+                <h3 class="questions__title">Система «Глаз — рука»</h3>
+                <div class="questions__answers">
+                    <span class="questions__answer">Нет</span>
+                    <span class="questions__answer">Иногда</span>
+                    <span class="questions__answer">Всегда</span>
+                </div>
+            </div>
+            <table class="questions__table">
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Пользуется указательным жестом
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row ">
+                    <td class="questions__table-data questions__table-data--main">
+                        Опускает мелкие предметы в&nbsp;узкое отверстие. Берёт их&nbsp;подушечками указательного
+                        и&nbsp;большого пальцев
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Любит переворачивать страницы, бывает и&nbsp;несколько страниц одновременно
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Берёт мелкие предметы двумя пальцами, большие&nbsp;&mdash; всей ладонью
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Когда тянется к&nbsp;предмету, то&nbsp;уже заранее приспосабливает руки, кисть, пальцы к&nbsp;форме
+                        предмета (если нужно взять кубик, то&nbsp;это будет одно положение кисти и&nbsp;пальцев, если
+                        маленький шарик, то&nbsp;другое)
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="questions__hearing">
+            <div class="questions__legend">
+                <h3 class="questions__title">Слух</h3>
+                <div class="questions__answers">
+                    <span class="questions__answer">Нет</span>
+                    <span class="questions__answer">Иногда</span>
+                    <span class="questions__answer">Всегда</span>
+                </div>
+            </div>
+            <table class="questions__table">
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Различает звуки: тиканье часов, лай собаки, шум ветра и&nbsp;др.
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row ">
+                    <td class="questions__table-data questions__table-data--main">
+                        Реагирует на&nbsp;скрипы, шорохи, шуршание
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Чувствует ритм. Ребёнку нравится ритмизированная речь: яркие эмоциональные реакции, когда читают
+                        потешки, простые детские стихи
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Безошибочно определяет направление звука в&nbsp;пространстве, поворачивает голову в&nbsp;сторону
+                        источника звука
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="questions__speech-and-understanding">
+            <div class="questions__legend">
+                <h3 class="questions__title">Понимание речи и говорение</h3>
+                <div class="questions__answers">
+                    <span class="questions__answer">Нет</span>
+                    <span class="questions__answer">Иногда</span>
+                    <span class="questions__answer">Всегда</span>
+                </div>
+            </div>
+            <table class="questions__table">
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Выполняет 5-7 простых одноступенчатых инструкций: &laquo;Дай...&raquo;, &laquo;Положи...&raquo;,
+                        &laquo;Покажи...&raquo;, &laquo;Принеси...&raquo; и&nbsp;др.
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row ">
+                    <td class="questions__table-data questions__table-data--main">
+                        Показывает по&nbsp;просьбе взрослого 1-2 части тела и&nbsp;лица: &laquo;Где твои ручки?&raquo;,
+                        &laquo;Где твоя головка?&raquo;, &laquo;Где твои глазки?&raquo;
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        По&nbsp;вашей просьбе из&nbsp;двух предметов выбирает тот, который ему называют
+                        <div class="questions__game">
+                            <img class="questions__game-image" src="#" alt="#">
+                            <p class="questions__game-description">
+                                Поставьте перед малышом две игрушки (кубик и&nbsp;машинку). Скажите:
+                                &laquo;Дай мне кубик&raquo;
+                            </p>
+                        </div>
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Звуками обозначает предметы. Например, взрослый неоднократно показывая ребёнку машину, говорит:
+                        &laquo;Это
+                        машина, как гудит машина?&raquo;, ребёнок говорит: &laquo;Би-би&raquo; (говорит от&nbsp;себя, не&nbsp;повторяет
+                        за&nbsp;взрослым)
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Легко подражает знакомым звукам, звукосочетаниям по&nbsp;просьбе взрослого (собачка лает &laquo;ав-ав&raquo;,
+                        паровоз гудит &laquo;у-у-у&raquo;, кукла плачет &laquo;а-а-а&raquo;)
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="questions__social-emotional">
+            <div class="questions__legend">
+                <h3 class="questions__title">Социально-эмоциональное развитие</h3>
+                <div class="questions__answers">
+                    <span class="questions__answer">Нет</span>
+                    <span class="questions__answer">Иногда</span>
+                    <span class="questions__answer">Всегда</span>
+                </div>
+            </div>
+            <table class="questions__table">
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Общается со&nbsp;взрослым при помощи звукосочетаний, которые различные по&nbsp;интонации и&nbsp;выполняют
+                        функцию предложений
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row ">
+                    <td class="questions__table-data questions__table-data--main">
+                        Старается всеми доступными способами привлечь к&nbsp;себе внимание окружающих
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Машет рукой &laquo;до&nbsp;свидания&raquo;, когда видит, что кто-то собирается уходить, или
+                        когда хочет, чтобы кто-нибудь ушёл быстрее
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Радуется приходу детей, обращает на&nbsp;них внимание
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Обнимает, целует близких людей
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="questions__game">
+            <div class="questions__legend">
+                <h3 class="questions__title">Игра</h3>
+                <div class="questions__answers">
+                    <span class="questions__answer">Нет</span>
+                    <span class="questions__answer">Иногда</span>
+                    <span class="questions__answer">Всегда</span>
+                </div>
+            </div>
+            <table class="questions__table">
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Может играть самостоятельно около взрослого до&nbsp;15-20 минут
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row ">
+                    <td class="questions__table-data questions__table-data--main">
+                        Пытается надевать колечки на&nbsp;стержень пирамидки, ставить кубик на&nbsp;кубик
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Среди ярких и&nbsp;больших игрушек, находит и&nbsp;берёт мелкие предметы
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Охотно включается в&nbsp;игру, предложенную взрослым (например, перекатывает мяч)
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Рассматривает книжки, узнаёт на&nbsp;картинках знакомые предметы
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="questions__independence">
+            <div class="questions__legend">
+                <h3 class="questions__title">Самостоятельность</h3>
+                <div class="questions__answers">
+                    <span class="questions__answer">Нет</span>
+                    <span class="questions__answer">Иногда</span>
+                    <span class="questions__answer">Всегда</span>
+                </div>
+            </div>
+            <table class="questions__table">
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Держит в&nbsp;руках и&nbsp;ест печенье
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row ">
+                    <td class="questions__table-data questions__table-data--main">
+                        С&nbsp;помощью взрослого пьёт из&nbsp;чашки
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Пытается есть ложкой, но&nbsp;чаще ест руками
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Начинает принимать участие в&nbsp;купании: протягивает руки и&nbsp;ноги, чтобы их&nbsp;намылили
+                        и&nbsp;смыли с&nbsp;них мыло
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="questions__thinking">
+            <div class="questions__legend">
+                <h3 class="questions__title">Мышление</h3>
+                <div class="questions__answers">
+                    <span class="questions__answer">Нет</span>
+                    <span class="questions__answer">Иногда</span>
+                    <span class="questions__answer">Всегда</span>
+                </div>
+            </div>
+            <table class="questions__table">
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Достаточно долго, по&nbsp;несколько минут наблюдает за&nbsp;людьми и&nbsp;происходящим вокруг
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row ">
+                    <td class="questions__table-data questions__table-data--main">
+                        Рассматривает свои фотографии
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Разными способами исследует разные предметы. Например, стучит предметом о&nbsp;пол, вертит его в&nbsp;руках
+                        и&nbsp;разглядывает
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Появляются специфические манипуляции: ребёнок понимает, что мяч нужно бросать, а&nbsp;машину
+                        катить
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Интересуется взаимосвязанными предметами. Например, тарелка и&nbsp;ложка, две части одной
+                        разрезной картинки и&nbsp;т.д.
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Одни предметы вкладывает в&nbsp;другие
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+                <tr class="questions__table-row">
+                    <td class="questions__table-data questions__table-data--main">
+                        Оставляет следы карандашом на&nbsp;бумаге
+                    </td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                    <td class="questions__table-data"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="notes container">
+        <h1 class="explanation__title">Диагностика</h1>
+        <div class="explanation__content">
+            <p class="explanation__point">
+                Возрастные навыки у&nbsp;всех здоровых детей формируются в&nbsp;строго
+                определённой последовательности и&nbsp;в&nbsp;определенные временные промежутки. В&nbsp;таблице собраны
+                именно те&nbsp;навыки и&nbsp;умения, которые формируются у&nbsp;ребёнка в&nbsp;этом возрасте.
+            </p>
+            <p class="explanation__point">
+                На&nbsp;протяжении двух дней наблюдайте за&nbsp;ребёнком и&nbsp;результаты
+                заносите в&nbsp;таблицу. Если ребёнок не&nbsp;освоил навык, например, не&nbsp;пытается стоять несколько
+                секунд самостоятельно&nbsp;&mdash; ставьте отметку в&nbsp;ячейке &laquo;Нет&raquo;. Если вы&nbsp;видите,
+                что ребёнок иногда пользуется указательным жестом, то&nbsp;ставьте отметку в&nbsp;ячейке &laquo;Иногда&raquo;.
+                А&nbsp;если, например, малыш понимает и&nbsp;выполняет ваши просьбы &laquo;Дай...&raquo;, &laquo;Положи...&raquo;,
+                то&nbsp;это значит, что навык уже точно сформирован и&nbsp;можно поставить отметку в&nbsp;ячейке &laquo;Всегда&raquo;.
+            </p>
+            <p class="explanation__point">
+                Постепенно заполняя таблицу, вы&nbsp;сами проводите простейшую диагностику развития своего малыша, и&nbsp;видите,
+                какие умения и&nbsp;навыки ребёнок осваивает легко, какие недостаточно сформированы и&nbsp;над чем ещё
+                нужно поработать. Если что-то из&nbsp;этой таблицы малыш ещё не&nbsp;научился делать&nbsp;&mdash;
+                уделите этому больше внимания. Для развития этих навыков нужно подобрать игры и&nbsp;упражнения,
+                нацеленные именно на&nbsp;них.
+            </p>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <h2 class="visually-hidden">Подвал страницы</h2>
+        <div class="footer__wrapper">
+            <div class="footer__left-side footer-left">
+                <img src="images/speech-logo.svg" alt="Логотип Развитие речи" class="footer-left__logo">
+                <div class="footer-left__contacts-wrapper">
+                    <div class="footer-left__contacts">
+                        <a class="footer-left__contacts-tel" href="tel:+79104548820">+7 910 454-88-20</a>
+                        <a class="footer-left__contacts-email" href="mailto:ivansbrs@gmail.com">ivansbrs@gmail.com</a>
+                    </div>
+                    <div class="footer-left__social">
+                        <a href="#" class="footer-left__social-link">
+                            <svg class="footer-left__social-image footer-left__social-image--vk" width="32" height="32"
+                                 viewBox="0 0 32 32" fill="#e8e8e8" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="10"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M25.5411 10.8126C25.6801 10.3442 25.5411 10 24.8794 10H22.6914C22.135 10 21.8786 10.2973 21.7395 10.6252C21.7395 10.6252 20.6268 13.3652 19.0505 15.145C18.5406 15.6602 18.3087 15.8242 18.0306 15.8242C17.8915 15.8242 17.6902 15.6602 17.6902 15.1919V10.8126C17.6902 10.2505 17.5287 10 17.0651 10H13.6268C13.2791 10 13.07 10.2609 13.07 10.5081C13.07 11.0409 13.8581 11.1638 13.9393 12.6626V15.9179C13.9393 16.6316 13.8118 16.761 13.5336 16.761C12.7919 16.761 10.9876 14.0087 9.91744 10.8594C9.70773 10.2473 9.49738 10 8.93819 10H6.75018C6.12504 10 6 10.2973 6 10.6252C6 11.2107 6.74178 14.1146 9.45387 17.9553C11.2619 20.5782 13.8093 22 16.1274 22C17.5182 22 17.6902 21.6842 17.6902 21.1403V19.1579C17.6902 18.5263 17.822 18.4003 18.2624 18.4003C18.5869 18.4003 19.1433 18.5642 20.4414 19.8288C21.9249 21.3276 22.1695 22 23.004 22H25.192C25.8171 22 26.1297 21.6842 25.9494 21.061C25.752 20.4399 25.0437 19.5388 24.1039 18.4705C23.5939 17.8616 22.8289 17.2059 22.5971 16.878C22.2726 16.4565 22.3653 16.2691 22.5971 15.8945C22.5971 15.8945 25.2629 12.1006 25.5411 10.8126V10.8126Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-left__social-link">
+                            <svg class="footer-left__social-image footer-left__social-image--dzen" width="32"
+                                 height="32"
+                                 viewBox="0 0 32 32" fill="#e8e8e8" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="10"/>
+                                <path
+                                    d="M26 16.1071V15.8929C21.5714 15.75 19.55 15.6429 17.9286 14.0714C16.3571 12.45 16.2429 10.4286 16.1071 6H15.8929C15.75 10.4286 15.6429 12.45 14.0714 14.0714C12.45 15.6429 10.4286 15.7571 6 15.8929V16.1071C10.4286 16.25 12.45 16.3571 14.0714 17.9286C15.6429 19.55 15.7571 21.5714 15.8929 26H16.1071C16.25 21.5714 16.3571 19.55 17.9286 17.9286C19.55 16.3571 21.5714 16.2429 26 16.1071"
+                                    fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-left__social-link">
+                            <svg class="footer-left__social-image footer-left__social-image--tg" width="32" height="32"
+                                 viewBox="0 0 32 32" fill="#e8e8e8" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="10"/>
+                                <path
+                                    d="M11.267 17.5327L7.65363 16.3799C7.65363 16.3799 7.22179 16.2083 7.36084 15.8193C7.38946 15.7391 7.44721 15.6709 7.61995 15.5536C8.42058 15.0071 22.4391 10.0735 22.4391 10.0735C22.4391 10.0735 22.8349 9.94295 23.0683 10.0298C23.1261 10.0473 23.1781 10.0795 23.2189 10.1231C23.2598 10.1668 23.2881 10.2202 23.3009 10.2781C23.3262 10.3802 23.3367 10.4854 23.3323 10.5904C23.3312 10.6812 23.3199 10.7654 23.3114 10.8975C23.226 12.2463 20.671 22.3133 20.671 22.3133C20.671 22.3133 20.5181 22.9024 19.9704 22.9226C19.8358 22.9268 19.7017 22.9045 19.5761 22.8569C19.4505 22.8094 19.336 22.7375 19.2394 22.6457C18.1646 21.7404 14.4497 19.2959 13.6289 18.7583C13.6103 18.746 13.5948 18.7299 13.5831 18.7111C13.5715 18.6924 13.5641 18.6714 13.5615 18.6496C13.55 18.5929 13.6129 18.5227 13.6129 18.5227C13.6129 18.5227 20.0815 12.8929 20.2536 12.3019C20.2669 12.2561 20.2166 12.2335 20.149 12.2536C19.7193 12.4083 12.2716 17.0136 11.4497 17.5218C11.3905 17.5393 11.328 17.5431 11.267 17.5327V17.5327Z"
+                                    fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-left__social-link">
+                            <svg class="footer-left__social-image footer-left__social-image--whatsapp" width="32"
+                                 height="32" viewBox="0 0 32 32" fill="#e8e8e8" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="10"/>
+                                <path
+                                    d="M8.00321 24L9.08481 20.0256C8.37212 18.8039 7.99769 17.4144 8.00001 16C8.00001 11.5816 11.5816 8 16 8C20.4184 8 24 11.5816 24 16C24 20.4184 20.4184 24 16 24C14.5862 24.0023 13.1973 23.6281 11.976 22.916L8.00321 24ZM13.1128 12.2464C13.0095 12.2528 12.9085 12.28 12.816 12.3264C12.7292 12.3755 12.65 12.437 12.5808 12.5088C12.4848 12.5992 12.4304 12.6776 12.372 12.7536C12.0763 13.1384 11.9173 13.6107 11.92 14.096C11.9216 14.488 12.024 14.8696 12.184 15.2264C12.5112 15.948 13.0496 16.712 13.7608 17.42C13.932 17.5904 14.0992 17.7616 14.2792 17.9208C15.1619 18.698 16.2138 19.2584 17.3512 19.5576L17.8064 19.6272C17.9544 19.6352 18.1024 19.624 18.2512 19.6168C18.4842 19.6048 18.7117 19.5417 18.9176 19.432C19.0224 19.378 19.1246 19.3193 19.224 19.256C19.224 19.256 19.2584 19.2336 19.324 19.184C19.432 19.104 19.4984 19.0472 19.588 18.9536C19.6544 18.8848 19.712 18.804 19.756 18.712C19.8184 18.5816 19.8808 18.3328 19.9064 18.1256C19.9256 17.9672 19.92 17.8808 19.9176 17.8272C19.9144 17.7416 19.8432 17.6528 19.7656 17.6152L19.3 17.4064C19.3 17.4064 18.604 17.1032 18.1792 16.9096C18.1344 16.8901 18.0864 16.879 18.0376 16.8768C17.9829 16.8712 17.9276 16.8773 17.8754 16.8949C17.8232 16.9124 17.7754 16.9409 17.7352 16.9784V16.9768C17.7312 16.9768 17.6776 17.0224 17.0992 17.7232C17.066 17.7678 17.0203 17.8015 16.9678 17.82C16.9154 17.8386 16.8587 17.8411 16.8048 17.8272C16.7527 17.8133 16.7016 17.7956 16.652 17.7744C16.5528 17.7328 16.5184 17.7168 16.4504 17.6872L16.4464 17.6856C15.9887 17.4858 15.565 17.2159 15.1904 16.8856C15.0896 16.7976 14.996 16.7016 14.9 16.6088C14.5853 16.3074 14.311 15.9664 14.084 15.5944L14.0368 15.5184C14.0029 15.4673 13.9755 15.4122 13.9552 15.3544C13.9248 15.2368 14.004 15.1424 14.004 15.1424C14.004 15.1424 14.1984 14.9296 14.2888 14.8144C14.3641 14.7187 14.4343 14.6191 14.4992 14.516C14.5936 14.364 14.6232 14.208 14.5736 14.0872C14.3496 13.54 14.1176 12.9952 13.8792 12.4544C13.832 12.3472 13.692 12.2704 13.5648 12.2552C13.5216 12.2504 13.4784 12.2456 13.4352 12.2424C13.3278 12.2371 13.2201 12.2389 13.1128 12.2464Z"
+                                    fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__right-side footer-right">
+                <div class="footer-right__nav">
+                    <h3 class="footer-right__nav-header">Интенсивы</h3>
+                    <ul class="footer-right__nav-list">
+                        <li class="footer-right__nav-item">Программа курса</li>
+                        <li class="footer-right__nav-item">Занятия</li>
+                        <li class="footer-right__nav-item">Ответы на&nbsp;вопросы</li>
+                        <li class="footer-right__nav-item">Запись на&nbsp;интенсив</li>
+                    </ul>
+                </div>
+                <div class="footer-right__nav">
+                    <h3 class="footer-right__nav-header">Юридическая информация</h3>
+                    <ul class="footer-right__nav-list">
+                        <li class="footer-right__nav-item">Пользовательское соглашение</li>
+                        <li class="footer-right__nav-item">Политика обработки персональных данных</li>
+                        <li class="footer-right__nav-item">О компании</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="module" src="js/bundle.js"></script>
+</body>
+</html>
