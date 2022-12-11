@@ -12,7 +12,7 @@ const sync = require("browser-sync").create();
 
 // html
 const html = () => {
-    return gulp.src("source/*.html")
+    return gulp.src("source/**/*.html")
         .pipe(htmlmin())
         .pipe(gulp.dest('build'))
         .pipe(sync.stream())
@@ -43,8 +43,7 @@ exports.styles = styles;
 const copy = () => {
     return gulp.src([
         "source/fonts/*.{woff2,woff}",
-        "source/images/**/*.{jpg,png,svg}",
-        "source/js/*.js"
+        "source/images/**/*.{jpg,png,svg}"
     ], {
         base: "source"
     })
@@ -77,7 +76,7 @@ exports.server = server;
 //watcher
 const watcher = () => {
     gulp.watch("source/less/**/*.less", gulp.series(styles));
-    gulp.watch("source/*.html", gulp.series(html));
+    gulp.watch("source/**/*.html", gulp.series(html));
     gulp.watch("source/js/**/*.js", gulp.series(copy));
 };
 
